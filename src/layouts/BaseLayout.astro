@@ -1,7 +1,6 @@
 ---
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
-import ThemeProvider from "@/components/ThemeProvider.astro";
 
 interface Props {
 	title?: string | undefined;
@@ -21,8 +20,7 @@ const { title, description } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="mx-auto max-w-screen-xl items-center bg-white justify-center dark:bg-black h-screen">
-		<ThemeProvider/>
+	<body class="mx-auto max-w-screen-xl items-center bg-white justify-center dark:bg-background/100 h-screen">
 		<Header/>
 		<slot />
 		<Footer/>
