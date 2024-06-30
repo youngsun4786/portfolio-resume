@@ -1,7 +1,7 @@
 ---
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
-import { Button } from "@/components/ui/button";
+import ThemeProvider from "@/components/ThemeProvider.astro";
 
 interface Props {
 	title?: string | undefined;
@@ -22,6 +22,7 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="mx-auto max-w-screen-xl items-center bg-white justify-center dark:bg-black h-screen">
+		<ThemeProvider/>
 		<Header/>
 		<slot />
 		<Footer/>
