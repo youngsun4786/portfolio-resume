@@ -4,7 +4,23 @@
     "strictNullChecks": true,
     "allowJs": true,
     "baseUrl": ".",
-    "lib": ["es2022", "dom", "dom.iterable"]
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "lib": [
+      "es2022",
+      "dom",
+      "dom.iterable"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   },
-  "exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"]
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+    ".vscode",
+    "dist"
+  ]
 }
