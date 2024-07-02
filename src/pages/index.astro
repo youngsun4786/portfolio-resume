@@ -1,13 +1,11 @@
 ---
+import ProfileCard from "@/components/ProfileCard.astro";
 import "@/styles/global.css";
 import Layout from '../layouts/BaseLayout.astro';
 ---
 
 <Layout title="Youngsun Yoo">
-	<main class="">
-		<div class= "flex justify-center items-center">
-			This is Youngsun Yoo's page
- 		</div>
-
+	<main class="flex-grow flex flex-row h-4/6 items-center justify-center">
+		<ProfileCard/>
 	</main>
 </Layout>
