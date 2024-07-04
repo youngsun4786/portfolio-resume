@@ -1,0 +1,23 @@
+---
+import {cn} from '@/lib/utils';
+
+const {class: className, as: Tag="div", title, href, ...props} = Astro.props
+---
+
+<Tag class={cn(className, "flex flex-row items-center justify-center gap-x-2",
+    href && "hover:opacity-50 transition-all"
+)}
+href={href}
+{...props}
+>
+    <slot name="icon" />
+    <span class="sr-only">{title}</span>
+</Tag>
+
+<!-- <Button variant="ghost" size="icon" asChild>
+    <a href="https://www.linkedin.com/in/youngsunyoo/" target="_blank" rel="noopener noreferrer">
+        <Linkedin className="h-4 w-4" />
+        <span class="sr-only">LinkedIn</span>
+    </a>
+</Button> -->
+
