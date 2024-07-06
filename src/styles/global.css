@@ -16,6 +16,23 @@
   font-display: swap;
 }
 
+.glow-overlay {
+  --glow-size: 25rem;
+
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--glow-opacity, 0);
+  mask: radial-gradient(
+    var(--glow-size) var(--glow-size) at var(--glow-x) var(--glow-y),
+    var(--glow-color) 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -48,7 +65,6 @@
 
     --radius: 0.5rem;
   }
-
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

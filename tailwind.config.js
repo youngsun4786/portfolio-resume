@@ -1,6 +1,7 @@
 import { fontFamily } from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 
+const plugin = require("tailwindcss/plugin");
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -79,5 +80,22 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+    plugin(
+      function ({ addVariant }) {
+        addVariant("glow", ".glow-capture .glow-overlay &");
+      },
+      {
+        theme: {
+          extend: {
+            colors: {
+              glow: "color-mix(in srgb, var(--glow-color) calc(<alpha-value> * 100%), transparent)",
+            },
+          },
+        },
+      }
+    ),
+  ],
 };
