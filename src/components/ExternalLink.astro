@@ -5,7 +5,7 @@ const {class: className, as: Tag="div", title, href, ...props} = Astro.props
 ---
 
 <Tag class={cn(className, "flex flex-row items-center justify-center gap-x-2",
-    href && "hover:opacity-50 transition-all"
+    href && "hover:bg-opacity-70 transition-all"
 )}
 href={href}
 {...props}
