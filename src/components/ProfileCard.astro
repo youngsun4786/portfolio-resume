@@ -4,7 +4,7 @@ import ImageCard from "@/components/ImageCard.astro";
 import profileImg from '/public/imgs/profile_img.jpg';
 ---
 
-<div class="relative glow-capture">
+<div class="group relative glow-capture">
     <div class="w-full max-w-lg p-10 border-2
     bg-slate-100/50 hover:bg-slate-200/50 border-slate-100 hover:border-slate-200
     dark:bg-zinc-900/20 dark:hover:bg-zinc-800/20 dark:border-white/5 dark:hover:border-white/10
@@ -59,8 +59,14 @@ import profileImg from '/public/imgs/profile_img.jpg';
         </div>
         <div class="glow-overlay" style="--glow-color: #777779")></div>
     </div>
+        <!-- Tooltip for Experience & Projects -->
+    <div class="absolute bottom-[calc(100%+0.5rem)] left-[50%] -translate-x-[50%] hidden group-hover:block w-auto">
+        <div class="bottom-full right-0 rounded-xl bg-black px-5 py-2 text-md text-white whitespace-nowrap">
+            Click for Experience & Projects
+            <svg class="absolute left-0 top-full h-2 w-full text-black" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0" /></svg>
+        </div>
+        </div>
 </div>
-
 
 <script is:inline>
     document.addEventListener("DOMContentLoaded", () => {
@@ -70,7 +76,6 @@ import profileImg from '/public/imgs/profile_img.jpg';
             captures.forEach(capture => {
                 // Clone the child element.
                 const clonedChild = capture.cloneNode(true);
-                // console.log(clonedChild);
                 const overlay = capture.querySelector(".glow-overlay");
 
                 // Append cloned child to overlay

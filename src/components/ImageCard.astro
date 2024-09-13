@@ -10,12 +10,12 @@ interface Props {
 const { src, alt } = Astro.props;
 ---
 
-<div class="card-image-container items-center">
+<div class="card-image-container ">
   <Image
     src={src}
     alt={alt}
     quality={100}
-    class="w-28 h-28 object-cover rounded-full" 
+    class="w-28 h-28 object-cover rounded-full border-2 border-slate-100 hover:border-slate-200 dark:border-white/5 dark:hover:border-white/10 shadow-black/80 glow:border-glow" 
   />
 </div>
 
@@ -23,5 +23,6 @@ const { src, alt } = Astro.props;
   .card-image-container {
     width: 30%;
     height: 30%;
+    align-items: center;
   }
 </style>
