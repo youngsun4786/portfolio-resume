@@ -1,21 +1,34 @@
 ---
 import ExternalLink from "@/components/ExternalLink.astro";
+import ImageCard from "@/components/ImageCard.astro";
+import profileImg from '/public/imgs/profile_img.jpg';
 ---
 
 <div class="relative glow-capture">
     <div class="w-full max-w-lg p-10 border-2
-    bg-slate-100/50 hover:bg-slate-200/50 border-slate-100 
-    dark:bg-zinc-900/20 dark:hover:bg-zinc-800/20 dark:border-white/5
+    bg-slate-100/50 hover:bg-slate-200/50 border-slate-100 hover:border-slate-200
+    dark:bg-zinc-900/20 dark:hover:bg-zinc-800/20 dark:border-white/5 dark:hover:border-white/10
     rounded-2xl shadow-black/80 
     flex md:flex-row-reverse flex-col flex-wrap md:items-start items-center md:justify-between justify-center
     glow glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.15]
     ">
         <div class="flex-1 md:order-1 order-2 flex-col w-full">
-            <div class="mb-8 italic opacity-80 flex flex-col">
+            <div class="justify-between flex">
+                <div class="italic opacity-80 flex flex-col">
+                    <p class="text-sm mb-1 glow:text-glow/[.15]">Aspiring Software Engineer</p>
+                    <p class="text-sm mb-1 glow:text-glow/[.15]">Interest in Compiler</p>
+                    <p class="text-sm glow:text-glow/[.15]">McGill Graduate</p>
+                </div>
+                <ImageCard src={profileImg}
+                alt="graduation-photo"
+                />
+            </div>
+            <!-- <div class="mb-8 italic opacity-80 flex flex-col">
                 <p class="text-sm mb-1 glow:text-glow/[.15]">Aspiring Software Engineer</p>
                 <p class="text-sm mb-1 glow:text-glow/[.15]">Interest in Compiler</p>
                 <p class="text-sm glow:text-glow/[.15]">McGill Graduate</p>
-            </div>
+            </div> -->
+
             <div class="pt-10 flex items-end align-baseline space-x-40">
                 <div class="">
                     <p class="text-sm mb-1 italic opacity-75">contacts: </p>
@@ -44,13 +57,9 @@ import ExternalLink from "@/components/ExternalLink.astro";
 
             </div>
         </div>
-        <div class="glow-overlay" style="--glow-color: #1250aa"></div>
+        <div class="glow-overlay" style="--glow-color: #777779")></div>
     </div>
 </div>
-
-
-
-
 
 
 <script is:inline>
