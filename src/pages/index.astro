@@ -1,11 +1,51 @@
 ---
 import ProfileCard from "@/components/ProfileCard.astro";
+import Section from "@/components/Section.astro";
 import "@/styles/global.css";
+import SkillLayout from '../components/SkillSection.astro';
 import Layout from '../layouts/BaseLayout.astro';
+
+const languages = [
+	'TypeScript',
+	'JavaScript',
+	'HTML/CSS',
+	'Java',
+	'Golang',
+	'Python',
+	'C',
+	'C++',
+	'PHP',
+	'OCaml',
+]
+const frontend = ['React', 'Angular', 'Next.js', 'Astro', 'Tailwind CSS', 'shadcn-UI' ]
+const backend = ['Node.js', 'Express', 'FastAPI', 'Django', 'Gin']
+const databases = ['PostgreSQL', 'MySQL', 'MongoDB', 'Firebase']
+const others = [
+	'Docker',
+	'Git',
+	'Gitlab',
+	'GitHub Actions',
+	'AWS',
+	'Azure'
+]
 ---
 
+
+
 <Layout title="Youngsun Yoo">
-	<main class="flex-grow flex flex-row h-3/6 items-center justify-center">
-		<ProfileCard/>			  
+	<main class="flex-grow flex flex-col items-center justify-center gap-y-10">
+		<ProfileCard />			  
+
+		<div class="flex flex-col">
+			<Section
+			title="Skills"
+			>
+			<SkillLayout title='Languages' skills={languages}/>
+			<SkillLayout title='Frontend Stack' skills={frontend} />
+			<SkillLayout title='Backend Stack' skills={backend} />
+			<SkillLayout title='Databases' skills={databases} />
+			<SkillLayout title='Others' skills={others} />
+		</Section>
+		</div>
 	</main>
 </Layout>
