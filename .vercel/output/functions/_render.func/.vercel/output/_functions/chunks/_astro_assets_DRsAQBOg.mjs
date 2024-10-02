@@ -1,5 +1,5 @@
 import { A as AstroError, g as NoImageMetadata, F as FailedToFetchRemoteImageDimensions, h as ExpectedImageOptions, j as ExpectedImage, k as ExpectedNotESMImage, r as resolveSrc, l as isRemoteImage, m as isESMImportedImage, n as isLocalService, D as DEFAULT_HASH_PROPS, o as InvalidImageService, p as ImageMissingAlt } from './astro/assets-service_CshDUYLC.mjs';
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, g as addAttribute, s as spreadAttributes, b as createAstro } from './astro/server_DNnwBSjk.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, g as addAttribute, s as spreadAttributes, b as createAstro } from './astro/server_DjVlc1MF.mjs';
 import 'clsx';
 
 function isImageMetadata(src) {
@@ -946,7 +946,7 @@ const $$Image = createComponent(async ($$result, $$props, $$slots) => {
     additionalAttributes.srcset = image.srcSet.attribute;
   }
   return renderTemplate`${maybeRenderHead()}<img${addAttribute(image.src, "src")}${spreadAttributes(additionalAttributes)}${spreadAttributes(image.attributes)}>`;
-}, "/Users/nick/Developer/portfolio-resume/node_modules/.pnpm/astro@4.15.6_typescript@5.6.2/node_modules/astro/components/Image.astro", void 0);
+}, "/Users/nick/Developer/portfolio-resume/node_modules/.pnpm/astro@4.15.10_typescript@5.6.2/node_modules/astro/components/Image.astro", void 0);
 
 const mimes = {
   "3g2": "video/3gpp2",
@@ -1449,7 +1449,7 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
     const srcsetAttribute = props.densities || !props.densities && !props.widths ? `${image.src}${image.srcSet.values.length > 0 ? ", " + image.srcSet.attribute : ""}` : image.srcSet.attribute;
     return renderTemplate`<source${addAttribute(srcsetAttribute, "srcset")}${addAttribute(lookup(image.options.format ?? image.src) ?? `image/${image.options.format}`, "type")}${spreadAttributes(sourceAdditionalAttributes)}>`;
   })} <img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(imgAdditionalAttributes)}${spreadAttributes(fallbackImage.attributes)}> </picture>`;
-}, "/Users/nick/Developer/portfolio-resume/node_modules/.pnpm/astro@4.15.6_typescript@5.6.2/node_modules/astro/components/Picture.astro", void 0);
+}, "/Users/nick/Developer/portfolio-resume/node_modules/.pnpm/astro@4.15.10_typescript@5.6.2/node_modules/astro/components/Picture.astro", void 0);
 
 const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[]};
 					const getImage = async (options) => await getImage$1(options, imageConfig);
