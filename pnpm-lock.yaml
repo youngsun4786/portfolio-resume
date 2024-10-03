@@ -13,10 +13,10 @@ dependencies:
     version: 3.6.2(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1)(react@18.3.1)(vite@5.4.8)
   '@astrojs/tailwind':
     specifier: ^5.1.0
-    version: 5.1.1(astro@4.15.10)(tailwindcss@3.4.13)
+    version: 5.1.1(astro@4.15.11)(tailwindcss@3.4.13)
   '@astrojs/vercel':
     specifier: ^7.8.1
-    version: 7.8.1(astro@4.15.10)(react@18.3.1)
+    version: 7.8.1(astro@4.15.11)(react@18.3.1)
   '@radix-ui/react-slot':
     specifier: ^1.1.0
     version: 1.1.0(@types/react@18.3.11)(react@18.3.1)
@@ -28,10 +28,10 @@ dependencies:
     version: 18.3.0
   astro:
     specifier: ^4.11.3
-    version: 4.15.10(typescript@5.6.2)
+    version: 4.15.11(typescript@5.6.2)
   astro-expressive-code:
     specifier: ^0.37.0
-    version: 0.37.0(astro@4.15.10)
+    version: 0.37.0(astro@4.15.11)
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -52,7 +52,7 @@ dependencies:
     version: 0.33.5
   tailwind-merge:
     specifier: ^2.3.0
-    version: 2.5.2
+    version: 2.5.3
   tailwindcss:
     specifier: ^3.4.4
     version: 3.4.13
@@ -219,13 +219,13 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.1.1(astro@4.15.10)(tailwindcss@3.4.13):
+  /@astrojs/tailwind@5.1.1(astro@4.15.11)(tailwindcss@3.4.13):
     resolution: {integrity: sha512-LwurA10uIKcGRxQP2R81RvAnBT0WPKzBntXZBF4hrAefDgM5Uumn0nsGr6tdIjSARgYz4X+Cq/Vh78t3bql3yw==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0-beta.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.15.10(typescript@5.6.2)
+      astro: 4.15.11(typescript@5.6.2)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -249,7 +249,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@7.8.1(astro@4.15.10)(react@18.3.1):
+  /@astrojs/vercel@7.8.1(astro@4.15.11)(react@18.3.1):
     resolution: {integrity: sha512-2PIVmv2/nI527DQsaZnf2jeUr+ddJjaQLXwqnVPXQn0LfIE8mi8BgYC5SUU9hJWIaFwEWTwJh90POaA2L3RpWQ==}
     peerDependencies:
       astro: ^4.2.0
@@ -258,7 +258,7 @@ packages:
       '@vercel/analytics': 1.3.1(react@18.3.1)
       '@vercel/edge': 1.1.2
       '@vercel/nft': 0.27.4
-      astro: 4.15.10(typescript@5.6.2)
+      astro: 4.15.11(typescript@5.6.2)
       esbuild: 0.21.5
       fast-glob: 3.3.2
       web-vitals: 3.5.2
@@ -1857,17 +1857,17 @@ packages:
       - typescript
     dev: true
 
-  /astro-expressive-code@0.37.0(astro@4.15.10):
+  /astro-expressive-code@0.37.0(astro@4.15.11):
     resolution: {integrity: sha512-ElWiCQHVQh5+l8fvGRgctvxEw63G/KEZgRi60ApPsHK6NsexgPZENk3bnHzbCpigCgh/L9k/yJ+3zOyuhoPqhQ==}
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
     dependencies:
-      astro: 4.15.10(typescript@5.6.2)
+      astro: 4.15.11(typescript@5.6.2)
       rehype-expressive-code: 0.37.0
     dev: false
 
-  /astro@4.15.10(typescript@5.6.2):
-    resolution: {integrity: sha512-2NA9VWkIAxruq7GyR6ojpEqPLVlN2pyXqUDxiuXSEaaF1ajoQzLkXUIfhJgYmmVSIeTnd4ps9T4nTOEjWaOKrw==}
+  /astro@4.15.11(typescript@5.6.2):
+    resolution: {integrity: sha512-uA9fenaRR+j6ksPFsmhM88ttz94a66SET1TZxAJLxctxWkDlgz58BxZYUc1gNlt0azhgzOgh4hP3q9M4YzAmBA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
@@ -2064,7 +2064,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001666
-      electron-to-chromium: 1.5.31
+      electron-to-chromium: 1.5.32
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.0)
     dev: false
@@ -2223,7 +2223,6 @@ packages:
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
-    requiresBuild: true
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
@@ -2237,7 +2236,6 @@ packages:
   /color@4.2.3:
     resolution: {integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==}
     engines: {node: '>=12.5.0'}
-    requiresBuild: true
     dependencies:
       color-convert: 2.0.1
       color-string: 1.9.1
@@ -2357,7 +2355,7 @@ packages:
       object-is: 1.1.6
       object-keys: 1.1.1
       object.assign: 4.1.5
-      regexp.prototype.flags: 1.5.2
+      regexp.prototype.flags: 1.5.3
       side-channel: 1.0.6
       which-boxed-primitive: 1.0.2
       which-collection: 1.0.2
@@ -2448,8 +2446,8 @@ packages:
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  /electron-to-chromium@1.5.31:
-    resolution: {integrity: sha512-QcDoBbQeYt0+3CWcK/rEbuHvwpbT/8SV9T3OSgs6cX1FlcUAkgrkqbg9zLnDrMM/rLamzQwal4LYFCiWk861Tg==}
+  /electron-to-chromium@1.5.32:
+    resolution: {integrity: sha512-M+7ph0VGBQqqpTT2YrabjNKSQ2fEl9PVx6AK3N558gDH9NO8O6XN9SXXFWRo9u9PbEg/bWq+tjXQr+eXmxubCw==}
     dev: false
 
   /emmet@2.4.11:
@@ -2511,7 +2509,7 @@ packages:
       object-inspect: 1.13.2
       object-keys: 1.1.1
       object.assign: 4.1.5
-      regexp.prototype.flags: 1.5.2
+      regexp.prototype.flags: 1.5.3
       safe-array-concat: 1.1.2
       safe-regex-test: 1.0.3
       string.prototype.trim: 1.2.9
@@ -3423,7 +3421,6 @@ packages:
 
   /is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
-    requiresBuild: true
     dev: false
 
   /is-async-function@2.0.0:
@@ -4929,8 +4926,8 @@ packages:
     resolution: {integrity: sha512-r/AadFO7owAq1QJVeZ/nq9jNS1vyZt+6t1p/E59B56Rn2GCya+gr1KSyOzNL/er+r+B7phv5jG2xU2Nz1YkmJg==}
     dev: false
 
-  /regexp.prototype.flags@1.5.2:
-    resolution: {integrity: sha512-NcDiDkTLuPR+++OCKB0nWafEmhg/Da8aUPLPMQbK+bxKKCm1/S5he+AqYa4PlMCVBalb4/yxIRub6qkEx5yJbw==}
+  /regexp.prototype.flags@1.5.3:
+    resolution: {integrity: sha512-vqlC04+RQoFalODCbCumG2xIOvapzVMHwsyIGM/SIE8fRhFFsXeH8/QQ+s0T0kDAhKc4k30s73/0ydkHQz6HlQ==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.7
@@ -5306,7 +5303,6 @@ packages:
 
   /simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
-    requiresBuild: true
     dependencies:
       is-arrayish: 0.3.2
     dev: false
@@ -5487,8 +5483,8 @@ packages:
       tslib: 2.7.0
     dev: true
 
-  /tailwind-merge@2.5.2:
-    resolution: {integrity: sha512-kjEBm+pvD+6eAwzJL2Bi+02/9LFLal1Gs61+QB7HvTfQQ0aXwC5LGT8PEt1gS0CWKktKe6ysPTAy3cBC5MeiIg==}
+  /tailwind-merge@2.5.3:
+    resolution: {integrity: sha512-d9ZolCAIzom1nf/5p4LdD5zvjmgSxY0BGgdSvmXIoMYAiPdAW/dSpP7joCDYFY7r/HkEa2qmPtkgsu0xjQeQtw==}
     dev: false
 
   /tailwindcss-animate@1.0.7(tailwindcss@3.4.13):
